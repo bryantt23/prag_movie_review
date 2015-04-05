@@ -3,52 +3,48 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "colors";
 
-header.movie { 
-  img { 
-    float: left; 
-    margin: 0 15px; 
+header.movie {
+  img {
+    float: left;
+    margin: 0 15px;
     border: 3px solid $secondary-color;
   }
-}
-
-nav#movies { 
-  text-align: center; 
 }
 
 
 /* FLASHES */
 
-.flash {  
+.flash {
 	color: $primary-text-color;
-	border-radius: 4px; 
-	padding: 10px; 
-	margin: 0; 
-	text-align: center; 
-	text-transform: uppercase; 
+	border-radius: 4px;
+	padding: 10px;
+	margin: 0;
+	text-align: center;
+	text-transform: uppercase;
 	box-shadow: #ffc 0 0 4px;
 
 	&.notice {
 		background-color: $flash-notice-color
 	}
 
-	&.alert { 
+	&.alert {
 		background-color: $flash-alert-color
 	}
 }
 
-section#errors { 
+section#errors {
 	margin: 1em 0; 
 	padding: 1em;
 	background: $errors-background-color;
 
-	h2 { 
+	h2 {
 		color: $errors-text-color;
 		font-size: 1.25em;
 	}
 
-	h3 { 
-		font-size: 1em; 
-		margin: 0.5em 0; 
+	h3 {
+		font-size: 1em;
+		margin: 0.5em 0;
 		font-weight: bold;
 	}
 }
