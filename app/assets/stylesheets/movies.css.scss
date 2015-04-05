@@ -1,0 +1,54 @@
+// Place all the styles related to the Movies controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "colors";
+
+header.movie { 
+  img { 
+    float: left; 
+    margin: 0 15px; 
+    border: 3px solid $secondary-color;
+  }
+}
+
+nav#movies { 
+  text-align: center; 
+}
+
+
+/* FLASHES */
+
+.flash {  
+	color: $primary-text-color;
+	border-radius: 4px; 
+	padding: 10px; 
+	margin: 0; 
+	text-align: center; 
+	text-transform: uppercase; 
+	box-shadow: #ffc 0 0 4px;
+
+	&.notice {
+		background-color: $flash-notice-color
+	}
+
+	&.alert { 
+		background-color: $flash-alert-color
+	}
+}
+
+section#errors { 
+	margin: 1em 0; 
+	padding: 1em;
+	background: $errors-background-color;
+
+	h2 { 
+		color: $errors-text-color;
+		font-size: 1.25em;
+	}
+
+	h3 { 
+		font-size: 1em; 
+		margin: 0.5em 0; 
+		font-weight: bold;
+	}
+}
