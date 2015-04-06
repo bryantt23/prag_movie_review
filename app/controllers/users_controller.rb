@@ -8,8 +8,6 @@ class UsersController < ApplicationController
   end
 
   def show
-    @reviews = @user.reviews
-    @favorite_movies = @user.favorite_movies
   end
 
   def new
