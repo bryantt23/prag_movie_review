@@ -1,12 +1,14 @@
 Rails.application.routes.draw do
 
+  get '/signin' => "sessions#new"
+  resource :session
+
   get '/signup' => "users#new"
   resources :users
-  # You can have the root of your site routed with "root"
-  root 'movies#index'
 
-    resources :movies do
-      resources :reviews
-    end
+  root "movies#index"
+  resources :movies do
+    resources :reviews
+  end
 
 end
