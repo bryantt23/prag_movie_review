@@ -11,6 +11,10 @@ header.movie {
   }
 }
 
+nav#movies {
+  text-align: center;
+}
+
 
 /* FLASHES */
 
@@ -32,8 +36,8 @@ header.movie {
 	}
 }
 
-section#errors {
-	margin: 1em 0; 
+section#errors { 
+	margin: 1em 0;
 	padding: 1em;
 	background: $errors-background-color;
 
