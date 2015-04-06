@@ -8,6 +8,8 @@ class UsersController < ApplicationController
   end
 
   def show
+    @reviews = @user.reviews
+    @favorite_movies = @user.favorite_movies
   end
 
   def new
@@ -44,11 +46,11 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:name, :email, :password, :password_confirmation)
+    params.require(:user).permit(:name, :username, :email, :password, :password_confirmation)
   end
 
   def find_user
-    @user = User.find(params[:id])
+    @user = User.find_by!(slug: params[:id])
   end
 
   def require_correct_user
